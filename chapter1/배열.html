@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트 변수</title>
+  <style>
+   body{
+       font-size:3rem;
+   }
+  </style>
+  <body>
+  <h1>array </h1>
+    <script>
+     var list = [1,2,3,4,5];
+     console.log(list); // 전체 배열 출력
+     console.log(list[2]); // 2의 위치의 값 출력
+     list.push(6); // 데이터를 추가할 때 사용
+     console.log(list);
+     concat_list=  list.concat([9,10]); // 원본 배열은 바뀌지 않음 두 배열을 합침
+     console.log(concat_list);// 합쳐진 배열 출력
+     concat_list.pop();
+     console.log(concat_list); // 원소 하나 뺴서 출력
+    </script>
+  </body>
+</head>
+</html>

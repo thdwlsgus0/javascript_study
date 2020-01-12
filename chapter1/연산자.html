@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>연산자</title>
+  <style>
+   body{
+       font-size:3rem;
+   }
+  </style>
+  <body>
+  <h1> 연산자 </h1>
+    <script>
+    a = 300;
+    b = 400;
+    console.log(a+b); // 덧셈
+    console.log(a-b); // 뺄셈
+    console.log(a*b); // 곱셈
+    console.log(a/b); // 나눗셈
+    message1 = "안녕";
+    message2 = "반가워";
+    console.log(message1 + message2); // 문자열 합치기
+    a = 1;
+    console.log(a++);
+    a = 1; // 축약형 --> a가 출력 후 ++
+    console.log(++a); // 축약형 --> ++후 a가 출력
+
+    var a = 1;
+    var b = 2;
+    console.log(a<b); // 비교연산자 a가 b보다 작음 true
+    console.log(a==b); // 비교연산자 a랑 b가 같지 않으므로 false 출력
+    console.log(a>b); // 비교연산자 a가 b보다 작으므로 false
+    // 논리 연산자 
+    // 그리고, 또는
+    var a = 100;
+    var b = 200;
+
+    console.log(a > 200 && b!= 100); // 논리연산자
+    console.log(!true); // 부정연산자
+    
+    </script>
+  </body>
+</head>
+</html>
