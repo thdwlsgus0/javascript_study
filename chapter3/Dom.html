@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트 DOM 객체</title>
+  <style>
+   body{
+       font-size:3rem;
+   }
+  </style>
+  <script>
+     // 첫번째 방법 onload 즉, onload를 이용해서 문서를 로딩하였을 때 
+     // javascript를 로딩합니다.
+     window.onload = function(){
+         title = document.getElementById('main-title');
+         console.log(title);
+     }
+     // 두번쨰 방법 addEventListener를 이용한 방법 
+     window.addEventListener('load', function(){
+         var title = document.getElementById('main-title');
+         console.log(title);
+     });
+
+     // 세번째 방법 DOMContentLoaded를 이용한 방법
+     window.addEventListener('DOMContentLoaded', function(){
+         var title = document.getElementById('main-title');
+         console.log(title);
+     })
+  </script> 
+ <body>
+  <h1 id="main-title">DOM 객체</h1>
+   <article>
+    <header>header</header>
+    <section>
+      <header class="main-header">s header</header>
+      section 1
+    </section>
+    <section>
+      <header>s header</header>
+      section 2
+    </article>
+   </div>
+   
+  </body>
+</head>
+</html>s

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트 생성자</title>
+  <style>
+   body{
+       font-size:3rem;
+   }
+  </style>
+  <body>
+  <h1>자바스크립트 생성자</h1>
+    <script>
+    function Food(foodname, price){
+        this.foodname = foodname;
+        this.price = price;
+        this.introduce = function(){
+            console.log('안녕? 나는 '+this.foodname+"이야 가격은 "+this.price+"이야");
+        }
+    }
+    var p1 = new Food("kimbab",2500);
+    p1.introduce();
+    var p2 = new Food("noodles",2000);
+    p2.introduce();
+    </script>
+  </body>
+</head>
+</html>
