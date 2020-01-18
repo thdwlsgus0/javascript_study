@@ -1,6 +1,6 @@
 자바스크립트와 css 정리중
 
-chapter 1. 변수/조건문/반복문/배열/연산자
+chapter 1. 변수/조건문/반복문/배열/연산자  
         1) 1.html --> document.write와 alert문을 이용한 간단한 문구 출력하기  
         2) 변수.html --> 정수형, boolean, undefined에 대한 실습  
         3) 연산자.html -->  사칙연산, 문자열 합치기, 축약형, 비교연산자, 논리연산자, 부정연산자  
