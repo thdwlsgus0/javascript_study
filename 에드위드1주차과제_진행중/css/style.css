@@ -15,24 +15,32 @@ body{
 #header_ui{
     display:flex;
     justify-content:center;
-    width:1820px;
+    width:1660px;
     height:100px;
     background-color:white;
     list-style:none;
-    margin-left:20px;
+    margin-left:40px;
+}
+.body_contents, .new_contents{
+    background-color:white;
+    margin-left:40px;
 }
 .body_contents{
-    width:1860px;
-    height:900px;
-    background-color:white;
-    margin-left:20px;
     text-align:center;
+    width:1700px;
+    height:900px;
 }
+.new_contents{
+    padding-top:50px;
+    padding-left:100px !important; 
+    width: 1600px;
+    height:900px;
+  }
 .footer_contents{
-    width:1010px;
+    width:850px;
     height:100px;
     background-color:white;
-    margin-left:20px;
+    margin-left:40px;
     margin-top:20px;
     padding-top:1px;
     padding-left:850px;
@@ -56,3 +64,4 @@ body{
 a:link{color:red; text-decoration:none;}
 a:visited{color: black; text-decoration:none;}
 a:hover{color:blue; text-decoration:underline;}
+
