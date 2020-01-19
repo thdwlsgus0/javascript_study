@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트 add li태그</title>
+  <style>
+    .special{
+        background:pink;
+    }
+  </style>
+   <script>
+    window.addEventListener('load', function(){
+        var ilbuni_mom = document.querySelector('.ilbuni-mom');
+        var listElem = document.createElement('li');
+        listElem.innerHTML = '<span>일분이</span>';
+        ilbuni_mom.appendChild(listElem);
+    })
+   </script>
+</head>
+<body>
+  <h1 class="main-title">
+    <small>small</small>
+  </h1>
+  <ul class="ilbuni-mom">
+   <li class="ilbuni">1
+   <a href="https://www.google.com">Google</a>
+   </li>
+   <li class="ilbuni">2</li>
+   <li class="ilbuni">3</li>
+  </ul>
+ 
+</body>
+
+</html>

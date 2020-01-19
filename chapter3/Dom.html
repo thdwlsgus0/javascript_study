@@ -10,27 +10,10 @@
        font-size:3rem;
    }
   </style>
-  <script>
-     // 첫번째 방법 onload 즉, onload를 이용해서 문서를 로딩하였을 때 
-     // javascript를 로딩합니다.
-     window.onload = function(){
-         title = document.getElementById('main-title');
-         console.log(title);
-     }
-     // 두번쨰 방법 addEventListener를 이용한 방법 
-     window.addEventListener('load', function(){
-         var title = document.getElementById('main-title');
-         console.log(title);
-     });
-
-     // 세번째 방법 DOMContentLoaded를 이용한 방법
-     window.addEventListener('DOMContentLoaded', function(){
-         var title = document.getElementById('main-title');
-         console.log(title);
-     })
-  </script> 
  <body>
-  <h1 id="main-title">DOM 객체</h1>
+  <h1 id="main-title">
+   <span class="desc">hello</span>
+  DOM 객체</h1>
    <article>
     <header>header</header>
     <section>
@@ -42,7 +25,11 @@
       section 2
     </article>
    </div>
-   
+   <script>
+    var title = document.getElementById("main-title");
+    var title_span = title.getElementsByTagName('span');
+    console.log(title_span[0]);
+   </script>
   </body>
 </head>
-</html>s
+</html>

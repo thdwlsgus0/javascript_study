@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트 class add</title>
+  <style>
+    .special{
+        background:pink;
+    }
+  </style>
+   <script>
+   window.addEventListener('load', function(){
+     var link = document.querySelector('.ilbuni a');
+     link.classList.add('special');
+     setTimeout( function(){
+       link.classList.remove('special');
+     }, 2000);
+     console.log(link.classList.contains('special'));
+   })
+   
+  </script>
+</head>
+<body>
+  <h1 class="main-title">
+    <small>small</small>
+  </h1>
+  <ul>
+   <li class="ilbuni">1
+   <a href="https://www.google.com">Google</a>
+   </li>
+   <li class="ilbuni">2</li>
+   <li class="ilbuni">3</li>
+  </ul>
+ 
+</body>
+
+</html>

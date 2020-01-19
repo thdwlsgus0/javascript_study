@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자바스크립트 event</title>
+  <style>
+    .special{
+        background:pink;
+    }
+    .btn{
+        font-size:2rem;
+    }
+  </style>
+   <script>
+    window.addEventListener('load', function(){
+       var btn = document.querySelector('.btn');
+       var maintitle = document.querySelector('.main-title');
+
+       function btnClickHandler(){
+           maintitle.style.background = 'dodgerblue';
+       }
+       btn.addEventListener('click', btnClickHandler, false);
+    })
+   </script>
+</head>
+<body>
+  <h1 class="main-title">
+    <small>small</small>
+  </h1>
+  <ul class="ilbuni-mom">
+   <li class="ilbuni">1
+   <a href="https://www.google.com">Google</a>
+   </li>
+   <li class="ilbuni">2</li>
+   <li class="ilbuni">3</li>
+  </ul>
+  <button class="btn">클릭하세요!</button>
+  
+</body>
+
+</html>
