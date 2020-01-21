@@ -61,6 +61,22 @@ body{
     box-shadow: 1px 1px 1px 1px;
     font-size:30px;
 }
+.picture_part1{
+    margin-bottom:100px;
+    margin-top:20px;
+    display:flex;
+
+}
+.picture_part2{
+    display:flex;
+    margin-top:100px;
+}
+.content1, .content2{
+   
+    margin-left:200px;
+    margin-bottom:-200px;
+    justify-content: center;
+}
 a:link{color:red; text-decoration:none;}
 a:visited{color: black; text-decoration:none;}
 a:hover{color:blue; text-decoration:underline;}
