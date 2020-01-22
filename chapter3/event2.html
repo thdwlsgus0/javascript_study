@@ -20,26 +20,24 @@
     .menu-active{
         background:orange;
     }
+    .menu{
+      background: yellowgreen;
+    }
   </style>
 <script>
  window.addEventListener('load', function(){
-    //현재 활성화된 메뉴를 담을 변수
     var currentMenu;
-    var menuLinks = document.querySelectorAll('.menu-link');
-      function clickMenuHandler(){
-      if(currentMenu)
-      {
+    var menu = document.querySelector('.menu');
+
+    function clickHandler(e){
+       if(currentMenu){
          currentMenu.classList.remove('menu-active');
-      }
-      this.classList.add('menu-active');
-      currentMenu = this;
-   }
-    
-   
-   console.log(menuLinks);
-   for(var i =0; i<menuLinks.length; i++){
-       menuLinks[i].addEventListener('click', clickMenuHandler);
-   }
+       }
+       e.target.classList.add('menu-active');
+       currentMenu = e.target;
+    }
+    menu.addEventListener('click', clickHandler);
+
     })
 </script>
 </head>
