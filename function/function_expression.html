@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+      <script>
+         window.addEventListener('load',function(){
+            function test(){
+                console.log(printName());
+                var printName = function(){
+                    return 'no';
+                }
+            }
+         })
+         test();
+      </script>  
+    </head>
+</html>
