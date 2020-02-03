@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      window.addEventListener('load', function()
+      {         
+          e1 = document.getElementById('outside');
+          e1.addEventListener('click', function(e){
+               var target = e.target;
+               console.log(target.className, target.nodeName);
+               console.log(target.className, target.nodeName);
+          }, false);
+      })
+    </script>
+  </head>
+  <body>
+  <header></header>
+  <div id="outside">클릭</div>
+</html>
