@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Interactive Web</title>
+     <style>
+       @keyframes sample-ani{
+           0%{
+               transform: translate:(0,0);
+           }
+           50%{
+               transform: translate:(300px, 0);
+           }
+           100%{
+               transform: translate(400px, 500px);
+           }
+       }
+       .box{
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           width:100px;
+           height:100px;
+           background-color:#fff000;
+           border:2px solid #000;
+           animation:sample-ani 2s linear;
+       }
+     </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div class="box">BOX</div>
+  </body>
+</html>
