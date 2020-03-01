@@ -1,0 +1,18 @@
+ul{
+    list-style:none;
+}
+.firstbackground{
+    display:flex;
+    background-color:yellow;
+    width:500px;
+    height:100px;
+    justify-content:space-around;
+    align-items:center;
+}
+img{
+    width:100px;
+    height:50px;
+}
+.special{
+  border:solid 2px red;
+}

@@ -1,0 +1,19 @@
+.menu{
+    display:flex;
+    background-color:gray;
+    width:700px;
+    border-radius:10px;
+}
+.menu-btn{
+    width:150px;
+    height:70px;
+    background-color:yellow;
+    margin-left:40px;
+    border-radius:10px;
+}
+.icon{
+    width:50px;
+    height:50px;
+    margin-bottom:-15px;
+
+}
