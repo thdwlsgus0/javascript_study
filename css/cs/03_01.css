@@ -61,11 +61,11 @@
 .door:nth-of-type(3) .door-body{
     background: rgba(0,0,255,0.7);
 }
-.door:hover .door-body{
+.door-opened .door-body{
     transform: rotateY(-100deg);
     perspective:800px;
     transform-origin:0%;
 }
-.door:hover .ilbuni{
+.door-opened .ilbuni{
     transform : translate3d(0,0,0);
 }
