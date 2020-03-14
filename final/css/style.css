@@ -25,7 +25,6 @@ body{
     height:100vh;
     transform-style: preserve-3d;
     transform: translateZ(-490vw);
-    
 }
 .wall{
     position:absolute;
@@ -39,6 +38,13 @@ body{
     left:-500vw;
     width: 1000vw;
     transform:rotateY(90deg);
+    background: #f8f8f8;
+}
+.wall-right{
+    left:-500vw;
+    width:1000vw;
+    transform:rotateY(90deg) translateZ(100vw);
+    background:#f8f8f8;
 }
 .wall-content{
     display:flex;
@@ -48,4 +54,17 @@ body{
 }
 .wall-title{
     font-size:5rem;
+}
+
+.wall-front-a {
+    transform : translateZ(300vw);
+}
+.wall-front-b {
+    transform : translateZ(50vw);
+}
+.wall-front-c {
+    transform : translateZ(-200vw);
+}
+.wall-front-d {
+    transform : translateZ(-500vw);
 }
